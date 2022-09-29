@@ -1,0 +1,14 @@
+{
+  "compras": [
+    {
+      "id": 1,
+      "item": "Macarrão",
+      "quantidade": 2
+    },
+    {
+      "item": "Recheado",
+      "quantidade": 2,
+      "id": 2
+    }
+  ]
+}
