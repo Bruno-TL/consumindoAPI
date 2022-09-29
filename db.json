@@ -2,13 +2,18 @@
   "compras": [
     {
       "id": 1,
-      "item": "Macarrão",
-      "quantidade": 2
+      "item": "arroz",
+      "quantidade": 1
     },
     {
       "item": "Recheado",
       "quantidade": 2,
       "id": 2
+    },
+    {
+      "item": "feijão",
+      "quantidade": 3,
+      "id": 3
     }
   ]
 }

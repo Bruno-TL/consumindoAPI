@@ -37,7 +37,7 @@ function atualizarLista() {
                         <td>${cadaItem.item}</td>
                         <td>${cadaItem.quantidade}</td>
                         <td>
-                            <button class="btn btn-warning ">
+                            <button onclick="editar(${cadaItem.id})" type="button" class="btn btn-warning">
                                 Editar
                             </button>
                             <button onclick="excluir(${cadaItem.id})" class="btn btn-info">
@@ -63,4 +63,24 @@ async function excluir (id) {
     });
 
     atualizarLista();
+}
+
+
+function editar(id){
+    event.preventDefault();
+
+    let dados = {
+        item:prompt('Diga o nome'),
+        quantidade: parseInt(prompt('Diga a quantidade'))
+    }
+
+    fetch("http://localhost:3000/compras/" + id,{
+        method: 'PATCH',
+        body: JSON.stringify(dados),
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
+        .then( resposta => resposta.json())
+        .then( () => atualizarLista() )
 }
