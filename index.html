@@ -55,6 +55,30 @@
             </div>
         </div>
 
+
+          
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEditar" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Editar item</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form id="form_editar" onsubmit="editar()">
+                    <input type="hidden" id="input_editar_id">
+
+                    <label for="input_editar_item">Nome do item</label>
+                    <input type="text" id="input_editar_item" class="form-control mb-3">
+
+                    <label for="input_editar_quantidade">Quantidade do Item</label>
+                    <input type="text" id="input_editar_quantidade" class="form-control mb-3">
+
+                    <div class="d-grid">
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+
     
 
         <!-- JavaScript Bundle with Popper -->

@@ -1,19 +1,49 @@
 {
   "compras": [
     {
-      "id": 1,
-      "item": "arroz",
-      "quantidade": 1
-    },
-    {
       "item": "Recheado",
-      "quantidade": 2,
+      "quantidade": "6",
       "id": 2
     },
     {
-      "item": "feijão",
+      "item": "coca-cola",
+      "quantidade": "6",
+      "id": 4
+    },
+    {
+      "item": "pepsi",
+      "quantidade": 4,
+      "id": 5
+    },
+    {
+      "item": "guarana",
+      "quantidade": 5,
+      "id": 6
+    },
+    {
+      "item": "maisSabor",
+      "quantidade": 6,
+      "id": 7
+    },
+    {
+      "item": "Sukita",
       "quantidade": 3,
-      "id": 3
+      "id": 8
+    },
+    {
+      "item": "Guarana Jesus",
+      "quantidade": 1,
+      "id": 9
+    },
+    {
+      "item": "Kuat",
+      "quantidade": 1,
+      "id": 10
+    },
+    {
+      "item": "Grapete",
+      "quantidade": 2,
+      "id": 11
     }
   ]
 }
