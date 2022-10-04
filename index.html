@@ -20,7 +20,11 @@
             </div>
         
             <div class="col text-end">
-                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button class="btn btn-outline-danger d-none" onclick="excluirSelecionados()" id="btn_remove_all">
+                    Excluir selecionado(s)
+                </button>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Novo Item
                 </button>
             </div>
@@ -31,7 +35,7 @@
             <thead>
                 <tr>
                     <th>
-                        <input type="checkbox" onclick="marcarTodos()">
+                        <input id="check_all" type="checkbox" onclick="marcarTodos()">
                     </th>
                     <th>ID</th>
                     <th>Item</th>
@@ -96,5 +100,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <script src="eventos.js"></script>
         <script src="filtrar.js"></script>
+        <script src="excluir.js"></script>
     </body>
 </html>
