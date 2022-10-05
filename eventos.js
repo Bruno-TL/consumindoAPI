@@ -68,9 +68,15 @@ function inserir() {
     form_add.reset();
 }
 
-function atualizarLista() {
+function atualizarLista(buscar) {
     tabela_compras.innerHTML = '';
-    fetch(API_url + '/compras', {method: 'GET'})
+    let x ;
+    if(buscar){
+        x = API_url + '/compras?q=' + buscar
+    }else {
+        x =API_url + '/compras'
+    }
+    fetch(x)
         .then( function (resposta) {
             return resposta.json();
         })
